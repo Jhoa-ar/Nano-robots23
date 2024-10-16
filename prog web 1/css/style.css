@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; /* Color azul para los enlaces */
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background: linear-gradient(to right, #3498db, #e74c3c);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.logotipo { 
+    display: flex;
+    align-items: center; 
+}
+
+.logotipo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+.title {
+    font-family: 'Lobster', cursive; /* Fuente decorativa */
+    font-size: 24px; /* Tamaño de fuente del título */
+    color: white; /* Color del título */
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    color: white; /* Color de texto en el nav */
+}
+
+nav a:hover {
+    color: #f1c40f; /* Color amarillo al pasar el ratón */
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+#video {
+    margin: 20px 0;
+    text-align: center;
+}
+
+iframe {
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    width: 100%; 
+    height: 300px;
+}
+
+.article-box {
+    background: linear-gradient(to right, #E8DAEF, #D4E6F1); 
+    border: 2px solid #1C2833; 
+    border-radius: 20px; 
+    padding: 5px; /* Reduce el padding */
+    margin: 5px 0; /* Reduce el margen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    text-align: center; /* Centra el contenido en línea */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.article-box:hover {
+    transform: scale(1.02); /* Efecto de escala al pasar el cursor */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.article-title {
+    color: #2c3e50; 
+    font-family: fantasy;
+    font-style: italic;
+}
+
+.article-image { /* Hace que la imagen sea un bloque */
+    width: 20%; /* Ajusta el ancho de la imagen */
+    border-radius: 5px; 
+    margin: 15px auto; /* Centra la imagen horizontalmente */
+}
+
+.article-link {
+    font-weight: bold; 
+    color: #3498db; 
+}
+
+.article-link:hover {
+    text-decoration: underline; 
+}
+
+p {
+    font-family: Arial; 
+    font-weight: 200; 
+    color: #333;
+    font-style: italic;
+}
+
+footer {
+    background: linear-gradient(to right, #3498db, #e74c3c)
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.social-links {
+    list-style-type: none; /* Elimina los puntos */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 30px; /* Ajusta el tamaño de los logotipos */
+    height: 30px;
+}
+
+/* Estilos para el menú de contactos */
+.contact-menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Espacio superior e inferior */
+}
+
+.contact-menu a {
+    background: linear-gradient(to right, #3498db, #e74c3c);/* Fondo azul */
+    color: white; 
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 5px; /* Espacio entre botones */
+    transition: background-color 0.3s ease; /* Transición de fondo */
+}
+
+.contact-menu a:hover {
+    background-color: #2980b9; /* Color más oscuro al pasar el cursor */
+}
